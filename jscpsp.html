@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+     
+        function profitloss(cp,sp,pl)
+        {
+           
+            if (sp>cp)
+            {
+               pl=sp-cp;
+                document.write("profit=:"+parseInt.pl);
+            }
+            else
+            {
+                pl=cp-sp;
+                document.write("Loss="+parseInt.pl);
+            }
+           
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var sp,cp,pl;
+            sp=prompt("enter the selleing price: ");
+            cp=prompt("enter the cost price :");
+            profitloss(sp,cp);
+    </script>
+</body>
+</html>

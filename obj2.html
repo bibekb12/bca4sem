@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> obj2</title>
+    </head>
+    <body>
+        <script>
+            var motor =new Object();
+                motor.type1="100vv";
+                motor.type2="200v/v";
+                motor.type3="300v/n";
+                motor.show=function()
+                {
+                    document.write("<br>motor voltage type 1 :"+this.type1);
+                    document.write("<br>motor voltage type2 :"+this.type2);
+                    document.write("<br>motor voltage type 3 :"+this.type3);
+                }
+                motor.show();
+        </script>
+    </body>
+</html>

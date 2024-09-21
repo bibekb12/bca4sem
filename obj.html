@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        var book=new Object();
+        book.isbn=101;
+        book.name="computer system";
+        book.price=1500;
+        book.show=function(){
+            document.write("<br> ISBN : "+this.isbn);
+            document.write("<br>Name :"+this.name);
+            document.write("<br>price :"+this.price);
+            
+        }
+        book.show();
+    </script>
+    
+</body>
+</html>

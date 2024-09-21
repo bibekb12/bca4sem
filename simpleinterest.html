@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function simpleinterest(p,t,r)
+        {
+            var i;           
+            i=(p*t*r)/100;
+          return i;
+        }
+    </script>
+</head>
+<body>
+    <script>
+    
+            p=prompt("Enter the principle :");
+            t=prompt("enter the time :");
+            r=prompt("enter the rate :");
+
+                // p=pharsefloat(p);
+                // t=pharsefloat(t);
+                // r=parseFloat(t);
+                // i=parseFloat(i);
+            var i=simpleinterest(p,t,r);
+            document.write("INterest :" +i);
+           
+    </script>
+</body>
+</html>

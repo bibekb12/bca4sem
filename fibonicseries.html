@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function fibbonaciToNum(num) {
+    let current = 0;
+    let arr = [0, 1];
+    for (let i = 1; i < arr.length; i++) {
+        current = arr[i] + arr[i - 1]
+        if (current <= num) {
+
+            arr.push(current);
+        }
+    }
+    return arr;
+}
+document.write(""+fibbonaciToNum(85));
+console.log(fibbonaciToNum(85));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

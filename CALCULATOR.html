@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        /* .body,button{
+            align-items: center;
+        } */
+        #screen{
+            padding: 1rem;
+        }
+        .calculator{
+            width: 1px;
+            height: 20px;
+            margin: auto;
+            box-shadow: black;
+            display: flex;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="calculator">
+    <div class="button" id="button"></div>
+    <input  type="text" id="screen" disabled>
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('+')" class="sign" id="plus">+</button>
+    <button onclick="appendToDisplay('-')" class="sign" id="minus">-</button>
+    <button onclick="appendToDisplay('*')" class="sign" id="into">*</button>
+    <button onclick="appendToDisplay('/')" class="sign" id="divide">/</button>
+    <button onclick="clearDisplay()" class="sign" id="ac">AC</button>
+    <button onclick="appendToDisplaySum('=')" class="sign" id="equal">=</button>
+    <script>
+        function appendToDisplay(value){
+            var screen = document.getElementById("screen").value+=value;
+        }
+        function clearDisplay(){
+            var screen = document.getElementById("screen").value='';
+        }
+        function appendToDisplaySum(){
+            const display = document.getElementById("screen").value+='display';
+            display=eval("screen");
+        }
+    </script>
+</div>
+</body>
+</html>
